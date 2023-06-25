@@ -905,7 +905,7 @@ namespace boost { namespace polygon{
       typename Scan45Data::iterator itrB = testData.lower_bound(Scan45Element(4, 29, -1));
       typename Scan45Data::iterator itr2 = testData.lower_bound(Scan45Element(4, 14, -1));
       if(itr1 != itr2) stdcout << "test1 failed\n";
-      if(itrA == itrB) stdcout << "test2 failed\n";
+      if(itrA == itrB) stdcout << "tree_test failed\n";
       //remove crossing elements
       testData.erase(itr20);
       testData.erase(itr30);

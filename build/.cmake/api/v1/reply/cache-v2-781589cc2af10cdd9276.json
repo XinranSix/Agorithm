@@ -2,7 +2,7 @@
 	"entries" : 
 	[
 		{
-			"name" : "Agorithm_BINARY_DIR",
+			"name" : "Algorithm_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -11,10 +11,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/lxr/workspace/Agorithm/build"
+			"value" : "/home/lxr/workspace/Algorithm/build"
 		},
 		{
-			"name" : "Agorithm_IS_TOP_LEVEL",
+			"name" : "Algorithm_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -26,7 +26,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "Agorithm_SOURCE_DIR",
+			"name" : "Algorithm_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -35,7 +35,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/lxr/workspace/Agorithm"
+			"value" : "/home/lxr/workspace/Algorithm"
 		},
 		{
 			"name" : "CMAKE_ADDR2LINE",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/lxr/workspace/Agorithm/build"
+			"value" : "/home/lxr/workspace/Algorithm/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -715,7 +715,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/lxr/workspace/Agorithm"
+			"value" : "/home/lxr/workspace/Algorithm"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -879,7 +879,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "6"
+			"value" : "5"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -959,7 +959,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Agorithm"
+			"value" : "Algorithm"
 		},
 		{
 			"name" : "CMAKE_RANLIB",

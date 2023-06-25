@@ -1119,7 +1119,7 @@ namespace boost { namespace polygon{
             at1->copyHoles(*(at1->otherTailp_));
             typename PolyLineArbitraryByConcept<Unit, typename geometry_concept<typename cT::value_type>::type>::type polyData(at1);
             //poly_line_arbitrary_polygon_data polyData(at1);
-            //std::cout << "test2\n";
+            //std::cout << "tree_test\n";
             //std::cout << poly << "\n";
             //std::cout << "test3\n";
             typedef typename cT::value_type result_type;

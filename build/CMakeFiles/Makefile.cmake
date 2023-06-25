@@ -13,9 +13,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
   "../src/CMakeLists.txt"
   "../src/test1/CMakeLists.txt"
-  "../src/test2/CMakeLists.txt"
   "../test/CMakeLists.txt"
-  "../test/test2/CMakeLists.txt"
+  "../test/tree_test/CMakeLists.txt"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
@@ -49,14 +48,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/test1/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/test2/CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "test/test2/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test/tree_test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "src/test1/CMakeFiles/test1.dir/DependInfo.cmake"
-  "src/test2/CMakeFiles/mylib.dir/DependInfo.cmake"
-  "test/test2/CMakeFiles/test234.dir/DependInfo.cmake"
+  "test/tree_test/CMakeFiles/test234.dir/DependInfo.cmake"
   )

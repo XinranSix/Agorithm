@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lxr/workspace/Agorithm
+CMAKE_SOURCE_DIR = /home/lxr/workspace/Algorithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lxr/workspace/Agorithm/build
+CMAKE_BINARY_DIR = /home/lxr/workspace/Algorithm/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -82,17 +82,14 @@ clean: test/clean
 
 # Recursive "all" directory target.
 src/all: src/test1/all
-src/all: src/test2/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
 src/preinstall: src/test1/preinstall
-src/preinstall: src/test2/preinstall
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
 src/clean: src/test1/clean
-src/clean: src/test2/clean
 .PHONY : src/clean
 
 #=============================================================================
@@ -111,65 +108,50 @@ src/test1/clean: src/test1/CMakeFiles/test1.dir/clean
 .PHONY : src/test1/clean
 
 #=============================================================================
-# Directory level rules for directory src/test2
-
-# Recursive "all" directory target.
-src/test2/all: src/test2/CMakeFiles/mylib.dir/all
-.PHONY : src/test2/all
-
-# Recursive "preinstall" directory target.
-src/test2/preinstall:
-.PHONY : src/test2/preinstall
-
-# Recursive "clean" directory target.
-src/test2/clean: src/test2/CMakeFiles/mylib.dir/clean
-.PHONY : src/test2/clean
-
-#=============================================================================
 # Directory level rules for directory test
 
 # Recursive "all" directory target.
-test/all: test/test2/all
+test/all: test/tree_test/all
 .PHONY : test/all
 
 # Recursive "preinstall" directory target.
-test/preinstall: test/test2/preinstall
+test/preinstall: test/tree_test/preinstall
 .PHONY : test/preinstall
 
 # Recursive "clean" directory target.
-test/clean: test/test2/clean
+test/clean: test/tree_test/clean
 .PHONY : test/clean
 
 #=============================================================================
-# Directory level rules for directory test/test2
+# Directory level rules for directory test/tree_test
 
 # Recursive "all" directory target.
-test/test2/all: test/test2/CMakeFiles/test234.dir/all
-.PHONY : test/test2/all
+test/tree_test/all: test/tree_test/CMakeFiles/test234.dir/all
+.PHONY : test/tree_test/all
 
 # Recursive "preinstall" directory target.
-test/test2/preinstall:
-.PHONY : test/test2/preinstall
+test/tree_test/preinstall:
+.PHONY : test/tree_test/preinstall
 
 # Recursive "clean" directory target.
-test/test2/clean: test/test2/CMakeFiles/test234.dir/clean
-.PHONY : test/test2/clean
+test/tree_test/clean: test/tree_test/CMakeFiles/test234.dir/clean
+.PHONY : test/tree_test/clean
 
 #=============================================================================
 # Target rules for target src/test1/CMakeFiles/test1.dir
 
 # All Build rule for target.
-src/test1/CMakeFiles/test1.dir/all: src/test2/CMakeFiles/mylib.dir/all
+src/test1/CMakeFiles/test1.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/test1/CMakeFiles/test1.dir/build.make src/test1/CMakeFiles/test1.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/test1/CMakeFiles/test1.dir/build.make src/test1/CMakeFiles/test1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lxr/workspace/Agorithm/build/CMakeFiles --progress-num=3,4 "Built target test1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lxr/workspace/Algorithm/build/CMakeFiles --progress-num=1,2 "Built target test1"
 .PHONY : src/test1/CMakeFiles/test1.dir/all
 
 # Build rule for subdir invocation for target.
 src/test1/CMakeFiles/test1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lxr/workspace/Agorithm/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lxr/workspace/Algorithm/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/test1/CMakeFiles/test1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lxr/workspace/Agorithm/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lxr/workspace/Algorithm/build/CMakeFiles 0
 .PHONY : src/test1/CMakeFiles/test1.dir/rule
 
 # Convenience name for target.
@@ -182,56 +164,30 @@ src/test1/CMakeFiles/test1.dir/clean:
 .PHONY : src/test1/CMakeFiles/test1.dir/clean
 
 #=============================================================================
-# Target rules for target src/test2/CMakeFiles/mylib.dir
+# Target rules for target test/tree_test/CMakeFiles/test234.dir
 
 # All Build rule for target.
-src/test2/CMakeFiles/mylib.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/test2/CMakeFiles/mylib.dir/build.make src/test2/CMakeFiles/mylib.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/test2/CMakeFiles/mylib.dir/build.make src/test2/CMakeFiles/mylib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lxr/workspace/Agorithm/build/CMakeFiles --progress-num=1,2 "Built target mylib"
-.PHONY : src/test2/CMakeFiles/mylib.dir/all
+test/tree_test/CMakeFiles/test234.dir/all:
+	$(MAKE) $(MAKESILENT) -f test/tree_test/CMakeFiles/test234.dir/build.make test/tree_test/CMakeFiles/test234.dir/depend
+	$(MAKE) $(MAKESILENT) -f test/tree_test/CMakeFiles/test234.dir/build.make test/tree_test/CMakeFiles/test234.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lxr/workspace/Algorithm/build/CMakeFiles --progress-num=3,4 "Built target test234"
+.PHONY : test/tree_test/CMakeFiles/test234.dir/all
 
 # Build rule for subdir invocation for target.
-src/test2/CMakeFiles/mylib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lxr/workspace/Agorithm/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/test2/CMakeFiles/mylib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lxr/workspace/Agorithm/build/CMakeFiles 0
-.PHONY : src/test2/CMakeFiles/mylib.dir/rule
+test/tree_test/CMakeFiles/test234.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lxr/workspace/Algorithm/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/tree_test/CMakeFiles/test234.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lxr/workspace/Algorithm/build/CMakeFiles 0
+.PHONY : test/tree_test/CMakeFiles/test234.dir/rule
 
 # Convenience name for target.
-mylib: src/test2/CMakeFiles/mylib.dir/rule
-.PHONY : mylib
-
-# clean rule for target.
-src/test2/CMakeFiles/mylib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/test2/CMakeFiles/mylib.dir/build.make src/test2/CMakeFiles/mylib.dir/clean
-.PHONY : src/test2/CMakeFiles/mylib.dir/clean
-
-#=============================================================================
-# Target rules for target test/test2/CMakeFiles/test234.dir
-
-# All Build rule for target.
-test/test2/CMakeFiles/test234.dir/all: src/test2/CMakeFiles/mylib.dir/all
-	$(MAKE) $(MAKESILENT) -f test/test2/CMakeFiles/test234.dir/build.make test/test2/CMakeFiles/test234.dir/depend
-	$(MAKE) $(MAKESILENT) -f test/test2/CMakeFiles/test234.dir/build.make test/test2/CMakeFiles/test234.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lxr/workspace/Agorithm/build/CMakeFiles --progress-num=5,6 "Built target test234"
-.PHONY : test/test2/CMakeFiles/test234.dir/all
-
-# Build rule for subdir invocation for target.
-test/test2/CMakeFiles/test234.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lxr/workspace/Agorithm/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/test2/CMakeFiles/test234.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lxr/workspace/Agorithm/build/CMakeFiles 0
-.PHONY : test/test2/CMakeFiles/test234.dir/rule
-
-# Convenience name for target.
-test234: test/test2/CMakeFiles/test234.dir/rule
+test234: test/tree_test/CMakeFiles/test234.dir/rule
 .PHONY : test234
 
 # clean rule for target.
-test/test2/CMakeFiles/test234.dir/clean:
-	$(MAKE) $(MAKESILENT) -f test/test2/CMakeFiles/test234.dir/build.make test/test2/CMakeFiles/test234.dir/clean
-.PHONY : test/test2/CMakeFiles/test234.dir/clean
+test/tree_test/CMakeFiles/test234.dir/clean:
+	$(MAKE) $(MAKESILENT) -f test/tree_test/CMakeFiles/test234.dir/build.make test/tree_test/CMakeFiles/test234.dir/clean
+.PHONY : test/tree_test/CMakeFiles/test234.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -8,7 +8,7 @@
 	"installers" : [],
 	"paths" : 
 	{
-		"build" : "test/test2",
-		"source" : "test/test2"
+		"build" : "test/tree_test",
+		"source" : "test/tree_test"
 	}
 }

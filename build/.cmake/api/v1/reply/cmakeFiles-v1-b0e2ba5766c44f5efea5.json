@@ -143,20 +143,17 @@
 			"path" : "src/test1/CMakeLists.txt"
 		},
 		{
-			"path" : "src/test2/CMakeLists.txt"
-		},
-		{
 			"path" : "test/CMakeLists.txt"
 		},
 		{
-			"path" : "test/test2/CMakeLists.txt"
+			"path" : "test/tree_test/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/lxr/workspace/Agorithm/build",
-		"source" : "/home/lxr/workspace/Agorithm"
+		"build" : "/home/lxr/workspace/Algorithm/build",
+		"source" : "/home/lxr/workspace/Algorithm"
 	},
 	"version" : 
 	{

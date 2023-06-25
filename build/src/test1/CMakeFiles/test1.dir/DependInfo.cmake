@@ -8,12 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/lxr/workspace/Agorithm/src/test1/main.cpp" "src/test1/CMakeFiles/test1.dir/main.cpp.o" "gcc" "src/test1/CMakeFiles/test1.dir/main.cpp.o.d"
+  "/home/lxr/workspace/Algorithm/src/test1/main.cpp" "src/test1/CMakeFiles/test1.dir/main.cpp.o" "gcc" "src/test1/CMakeFiles/test1.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/lxr/workspace/Agorithm/build/src/test2/CMakeFiles/mylib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

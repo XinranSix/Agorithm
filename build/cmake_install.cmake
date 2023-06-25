@@ -1,4 +1,4 @@
-# Install script for directory: /home/lxr/workspace/Agorithm
+# Install script for directory: /home/lxr/workspace/Algorithm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,8 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/lxr/workspace/Agorithm/build/src/cmake_install.cmake")
-  include("/home/lxr/workspace/Agorithm/build/test/cmake_install.cmake")
+  include("/home/lxr/workspace/Algorithm/build/src/cmake_install.cmake")
+  include("/home/lxr/workspace/Algorithm/build/test/cmake_install.cmake")
 
 endif()
 
@@ -57,5 +57,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/lxr/workspace/Agorithm/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/lxr/workspace/Algorithm/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

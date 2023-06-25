@@ -1,4 +1,4 @@
-C:\WINDOWS\system32\wsl.exe --distribution Ubuntu-20.04 --exec /bin/zsh -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /home/lxr/workspace/Agorithm/build && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S /home/lxr/workspace/Agorithm -B /home/lxr/workspace/Agorithm/build"
+C:\WINDOWS\system32\wsl.exe --distribution Ubuntu-20.04 --exec /bin/zsh -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /home/lxr/workspace/Algorithm/build && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S /home/lxr/workspace/Algorithm -B /home/lxr/workspace/Algorithm/build"
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/lxr/workspace/Agorithm/build
+-- Build files have been written to: /home/lxr/workspace/Algorithm/build

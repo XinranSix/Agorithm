@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/lxr/workspace/Algorithm/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lxr/workspace/Algorithm/build/CMakeFiles /home/lxr/workspace/Algorithm/build/src/test2//CMakeFiles/progress.marks
-	cd /home/lxr/workspace/Algorithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/test2/all
+	cd /home/lxr/workspace/Algorithm/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lxr/workspace/Algorithm/build/CMakeFiles /home/lxr/workspace/Algorithm/build/test/tree_test//CMakeFiles/progress.marks
+	cd /home/lxr/workspace/Algorithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/tree_test/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lxr/workspace/Algorithm/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/lxr/workspace/Algorithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/test2/clean
+	cd /home/lxr/workspace/Algorithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/tree_test/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,12 +103,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/lxr/workspace/Algorithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/test2/preinstall
+	cd /home/lxr/workspace/Algorithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/tree_test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/lxr/workspace/Algorithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/test2/preinstall
+	cd /home/lxr/workspace/Algorithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/tree_test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -117,25 +117,25 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/test2/CMakeFiles/mylib.dir/rule:
-	cd /home/lxr/workspace/Algorithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/test2/CMakeFiles/mylib.dir/rule
-.PHONY : src/test2/CMakeFiles/mylib.dir/rule
+test/tree_test/CMakeFiles/test234.dir/rule:
+	cd /home/lxr/workspace/Algorithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/tree_test/CMakeFiles/test234.dir/rule
+.PHONY : test/tree_test/CMakeFiles/test234.dir/rule
 
 # Convenience name for target.
-mylib: src/test2/CMakeFiles/mylib.dir/rule
-.PHONY : mylib
+test234: test/tree_test/CMakeFiles/test234.dir/rule
+.PHONY : test234
 
 # fast build rule for target.
-mylib/fast:
-	cd /home/lxr/workspace/Algorithm/build && $(MAKE) $(MAKESILENT) -f src/test2/CMakeFiles/mylib.dir/build.make src/test2/CMakeFiles/mylib.dir/build
-.PHONY : mylib/fast
+test234/fast:
+	cd /home/lxr/workspace/Algorithm/build && $(MAKE) $(MAKESILENT) -f test/tree_test/CMakeFiles/test234.dir/build.make test/tree_test/CMakeFiles/test234.dir/build
+.PHONY : test234/fast
 
 test.o: test.cpp.o
 .PHONY : test.o
 
 # target to build an object file
 test.cpp.o:
-	cd /home/lxr/workspace/Algorithm/build && $(MAKE) $(MAKESILENT) -f src/test2/CMakeFiles/mylib.dir/build.make src/test2/CMakeFiles/mylib.dir/test.cpp.o
+	cd /home/lxr/workspace/Algorithm/build && $(MAKE) $(MAKESILENT) -f test/tree_test/CMakeFiles/test234.dir/build.make test/tree_test/CMakeFiles/test234.dir/test.cpp.o
 .PHONY : test.cpp.o
 
 test.i: test.cpp.i
@@ -143,7 +143,7 @@ test.i: test.cpp.i
 
 # target to preprocess a source file
 test.cpp.i:
-	cd /home/lxr/workspace/Algorithm/build && $(MAKE) $(MAKESILENT) -f src/test2/CMakeFiles/mylib.dir/build.make src/test2/CMakeFiles/mylib.dir/test.cpp.i
+	cd /home/lxr/workspace/Algorithm/build && $(MAKE) $(MAKESILENT) -f test/tree_test/CMakeFiles/test234.dir/build.make test/tree_test/CMakeFiles/test234.dir/test.cpp.i
 .PHONY : test.cpp.i
 
 test.s: test.cpp.s
@@ -151,7 +151,7 @@ test.s: test.cpp.s
 
 # target to generate assembly for a file
 test.cpp.s:
-	cd /home/lxr/workspace/Algorithm/build && $(MAKE) $(MAKESILENT) -f src/test2/CMakeFiles/mylib.dir/build.make src/test2/CMakeFiles/mylib.dir/test.cpp.s
+	cd /home/lxr/workspace/Algorithm/build && $(MAKE) $(MAKESILENT) -f test/tree_test/CMakeFiles/test234.dir/build.make test/tree_test/CMakeFiles/test234.dir/test.cpp.s
 .PHONY : test.cpp.s
 
 # Help Target
@@ -162,7 +162,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... mylib"
+	@echo "... test234"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"

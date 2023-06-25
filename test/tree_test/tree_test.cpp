@@ -4,9 +4,9 @@
  * @Date           : 2023/6/25
  */
 
-#include "test.h"
+#include "lxr/tree.hpp"
 
 int main() {
-    print_hello_world();
+    lxr::Tree<int> t;
     return 0;
 }

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/lxr/workspace/Agorithm/./include -I/home/lxr/workspace/Agorithm/DIR_INC
+CXX_INCLUDES = -I/home/lxr/workspace/Algorithm/./include -I/home/lxr/workspace/Algorithm/DIR_INC
 
-CXX_FLAGS = -g -std=gnu++17
+CXX_FLAGS = -g -std=gnu++20
 

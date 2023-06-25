@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lxr/workspace/Agorithm
+CMAKE_SOURCE_DIR = /home/lxr/workspace/Algorithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lxr/workspace/Agorithm/build
+CMAKE_BINARY_DIR = /home/lxr/workspace/Algorithm/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lxr/workspace/Agorithm/build/CMakeFiles /home/lxr/workspace/Agorithm/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lxr/workspace/Algorithm/build/CMakeFiles /home/lxr/workspace/Algorithm/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lxr/workspace/Agorithm/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lxr/workspace/Algorithm/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,19 +130,6 @@ test1/fast:
 .PHONY : test1/fast
 
 #=============================================================================
-# Target rules for targets named mylib
-
-# Build rule for target.
-mylib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mylib
-.PHONY : mylib
-
-# fast build rule for target.
-mylib/fast:
-	$(MAKE) $(MAKESILENT) -f src/test2/CMakeFiles/mylib.dir/build.make src/test2/CMakeFiles/mylib.dir/build
-.PHONY : mylib/fast
-
-#=============================================================================
 # Target rules for targets named test234
 
 # Build rule for target.
@@ -152,7 +139,7 @@ test234: cmake_check_build_system
 
 # fast build rule for target.
 test234/fast:
-	$(MAKE) $(MAKESILENT) -f test/test2/CMakeFiles/test234.dir/build.make test/test2/CMakeFiles/test234.dir/build
+	$(MAKE) $(MAKESILENT) -f test/tree_test/CMakeFiles/test234.dir/build.make test/tree_test/CMakeFiles/test234.dir/build
 .PHONY : test234/fast
 
 # Help Target
@@ -163,7 +150,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... mylib"
 	@echo "... test1"
 	@echo "... test234"
 .PHONY : help

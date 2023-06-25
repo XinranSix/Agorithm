@@ -1,4 +1,4 @@
-# Install script for directory: /home/lxr/workspace/Agorithm/src
+# Install script for directory: /home/lxr/workspace/Algorithm/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,8 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/lxr/workspace/Agorithm/build/src/test1/cmake_install.cmake")
-  include("/home/lxr/workspace/Agorithm/build/src/test2/cmake_install.cmake")
+  include("/home/lxr/workspace/Algorithm/build/src/test1/cmake_install.cmake")
 
 endif()
 

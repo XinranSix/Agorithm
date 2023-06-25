@@ -1,4 +1,4 @@
-# Install script for directory: /home/lxr/workspace/Agorithm/src/test1
+# Install script for directory: /home/lxr/workspace/Algorithm/src/test1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -309,7 +309,7 @@ namespace boost { namespace polygon{
             //we are closing a solid figure, write to output
             //std::cout << "test1\n";
             at1->copyHoles(*(at1->otherTailp_));
-            //std::cout << "test2\n";
+            //std::cout << "tree_test\n";
             //Polygon45WithHolesImpl<PolyLine45PolygonData> poly(polyData);
             //std::cout << poly << "\n";
             //std::cout << "test3\n";
