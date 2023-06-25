@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lxr/workspace/Agorithm/build/CMakeFiles /home/lxr/workspace/Agorithm/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/lxr/workspace/Agorithm/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lxr/workspace/Agorithm/build/CMakeFiles /home/lxr/workspace/Agorithm/build/test//CMakeFiles/progress.marks
+	cd /home/lxr/workspace/Agorithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lxr/workspace/Agorithm/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/lxr/workspace/Agorithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,57 +103,18 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/lxr/workspace/Agorithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/lxr/workspace/Agorithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/lxr/workspace/Agorithm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named test1
-
-# Build rule for target.
-test1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test1
-.PHONY : test1
-
-# fast build rule for target.
-test1/fast:
-	$(MAKE) $(MAKESILENT) -f src/test1/CMakeFiles/test1.dir/build.make src/test1/CMakeFiles/test1.dir/build
-.PHONY : test1/fast
-
-#=============================================================================
-# Target rules for targets named mylib
-
-# Build rule for target.
-mylib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mylib
-.PHONY : mylib
-
-# fast build rule for target.
-mylib/fast:
-	$(MAKE) $(MAKESILENT) -f src/test2/CMakeFiles/mylib.dir/build.make src/test2/CMakeFiles/mylib.dir/build
-.PHONY : mylib/fast
-
-#=============================================================================
-# Target rules for targets named test234
-
-# Build rule for target.
-test234: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test234
-.PHONY : test234
-
-# fast build rule for target.
-test234/fast:
-	$(MAKE) $(MAKESILENT) -f test/test2/CMakeFiles/test234.dir/build.make test/test2/CMakeFiles/test234.dir/build
-.PHONY : test234/fast
 
 # Help Target
 help:
@@ -163,9 +124,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... mylib"
-	@echo "... test1"
-	@echo "... test234"
 .PHONY : help
 
 
@@ -177,6 +135,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/lxr/workspace/Agorithm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

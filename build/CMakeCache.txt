@@ -14,6 +14,15 @@
 # EXTERNAL cache entries
 ########################
 
+//Value Computed by CMake
+Agorithm_BINARY_DIR:STATIC=/home/lxr/workspace/Agorithm/build
+
+//Value Computed by CMake
+Agorithm_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Agorithm_SOURCE_DIR:STATIC=/home/lxr/workspace/Agorithm
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -156,7 +165,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=CPP
+CMAKE_PROJECT_NAME:STATIC=Agorithm
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -219,15 +228,6 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
-
-//Value Computed by CMake
-CPP_BINARY_DIR:STATIC=/home/lxr/workspace/Agorithm/build
-
-//Value Computed by CMake
-CPP_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-CPP_SOURCE_DIR:STATIC=/home/lxr/workspace/Agorithm
 
 //Path to a program.
 ProcessorCount_cmd_nproc:FILEPATH=/usr/bin/nproc
@@ -348,7 +348,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

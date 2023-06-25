@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/test234.dir/test.cpp.o -o ../../../bin/test234   -L/home/lxr/workspace/Agorithm/./lib  -Wl,-rpath,/home/lxr/workspace/Agorithm/./lib ../../src/test2/libmylib.a 

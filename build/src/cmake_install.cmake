@@ -44,7 +44,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/lxr/workspace/Agorithm/build/src/test/cmake_install.cmake")
   include("/home/lxr/workspace/Agorithm/build/src/test1/cmake_install.cmake")
   include("/home/lxr/workspace/Agorithm/build/src/test2/cmake_install.cmake")
 
