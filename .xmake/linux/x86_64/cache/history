@@ -1,0 +1,11 @@
+{
+    cmdlines = {
+        "xmake check",
+        "xmake -w",
+        "xmake l /home/lxr/.vscode-server/extensions/tboox.xmake-vscode-2.1.2/assets/default_target.lua",
+        "xmake run main",
+        "xmake check",
+        "xmake l /home/lxr/.vscode-server/extensions/tboox.xmake-vscode-2.1.2/assets/explorer.lua",
+        "xmake l /home/lxr/.vscode-server/extensions/tboox.xmake-vscode-2.1.2/assets/config.lua"
+    }
+}

@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/test1.dir/main.cpp.o -o ../../../bin/test1   -L/home/lxr/workspace/Algorithm/./lib  -Wl,-rpath,/home/lxr/workspace/Algorithm/./lib -lmylib 
