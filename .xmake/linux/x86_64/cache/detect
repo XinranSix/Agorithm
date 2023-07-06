@@ -1,89 +1,40 @@
 {
-    find_program = {
-        unzip = "/usr/bin/unzip",
-        zig = false,
-        git = "/usr/bin/git",
-        gcc = "/usr/bin/gcc",
-        tar = "/usr/bin/tar",
-        gzip = "/usr/bin/gzip",
-        ["/usr/bin/gcc"] = "/usr/bin/gcc"
-    },
     find_programver_fetch_package_system = {
         ["/usr/local/bin/cmake"] = "3.26.1"
-    },
-    find_programver_fetch_package_xmake = {
-        ["/usr/local/bin/cmake"] = "3.26.1"
-    },
-    ["detect.tools.gcc.has_cflags"] = {
-        ["/usr/bin/gcc_11.3.0-1ubuntu1"] = {
-            ["-o"] = true,
-            ["-print-multi-os-directory"] = true,
-            ["-print-multi-lib"] = true,
-            ["-dumpmachine"] = true,
-            ["-dumpversion"] = true,
-            ["-print-search-dirs"] = true,
-            ["-Xpreprocessor"] = true,
-            ["--param"] = true,
-            ["-print-sysroot"] = true,
-            ["-x"] = true,
-            ["-pie"] = true,
-            ["-Xassembler"] = true,
-            ["-dumpspecs"] = true,
-            ["-Xlinker"] = true,
-            ["-save-temps"] = true,
-            ["-print-multiarch"] = true,
-            ["-print-libgcc-file-name"] = true,
-            ["-pass-exit-codes"] = true,
-            ["--help"] = true,
-            ["-B"] = true,
-            ["-time"] = true,
-            ["-pipe"] = true,
-            ["-print-multi-directory"] = true,
-            ["-E"] = true,
-            ["-v"] = true,
-            ["-S"] = true,
-            ["-no-canonical-prefixes"] = true,
-            ["--version"] = true,
-            ["-print-sysroot-headers-suffix"] = true,
-            ["-c"] = true,
-            ["-shared"] = true,
-            ["--target-help"] = true
-        }
-    },
-    find_programver = {
-        ["/usr/bin/gcc"] = "11.3.0-1ubuntu1"
-    },
-    find_program_gcc_arch_x86_64_plat_linux_checktoolcxx = {
-        gcc = "/usr/bin/gcc"
     },
     find_program_fetch_package_system = {
         cmake = "/usr/local/bin/cmake"
     },
-    find_program_fetch_package_xmake = {
-        cmake = "/usr/local/bin/cmake"
+    find_programver_fetch_package_xmake = {
+        ["/usr/local/bin/cmake"] = "3.26.1"
+    },
+    find_program = {
+        zig = false,
+        git = "/usr/bin/git",
+        unzip = "/usr/bin/unzip",
+        gzip = "/usr/bin/gzip",
+        gcc = "/usr/bin/gcc",
+        tar = "/usr/bin/tar"
     },
     find_package_linux_x86_64_fetch_package_xmake = {
         ["xmake::fmt_cf4a2efd8ed34f738dfde8eaa4fb9660_release_10.0.0_external"] = {
-            version = "10.0.0",
-            sysincludedirs = {
-                "/home/yaojie/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/include"
-            },
             linkdirs = {
                 "/home/yaojie/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/lib"
             },
-            libfiles = {
-                "/home/yaojie/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/lib/libfmt.a"
+            sysincludedirs = {
+                "/home/yaojie/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/include"
             },
+            static = true,
+            version = "10.0.0",
             links = {
                 "fmt"
             },
-            static = true
+            libfiles = {
+                "/home/yaojie/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/lib/libfmt.a"
+            }
         }
     },
-    ["lib.detect.has_flags"] = {
-        ["linux_x86_64_/usr/bin/gcc_11.3.0-1ubuntu1_cxx_cxflags_-m64_-std=c++20"] = true,
-        ["linux_x86_64_/usr/bin/gcc_11.3.0-1ubuntu1_cxx_cxflags_-m64_-MMD -MF"] = true,
-        ["linux_x86_64_/usr/bin/gcc_11.3.0-1ubuntu1_cxx__-m64_-fPIC"] = true,
-        ["linux_x86_64_/usr/bin/gcc_11.3.0-1ubuntu1_cxx_cxflags_-m64_-fdiagnostics-color=always"] = true
+    find_program_fetch_package_xmake = {
+        cmake = "/usr/local/bin/cmake"
     }
 }

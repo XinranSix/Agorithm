@@ -1,12 +1,1 @@
-{
-    tool_target_main_linux_x86_64_cxx = {
-        toolchain_info = {
-            plat = "linux",
-            name = "gcc",
-            cachekey = "gcc_arch_x86_64_plat_linux",
-            arch = "x86_64"
-        },
-        toolname = "gcc",
-        program = "/usr/bin/gcc"
-    }
-}
+{ }

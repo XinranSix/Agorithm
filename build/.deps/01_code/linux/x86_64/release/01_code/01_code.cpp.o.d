@@ -1,6 +1,4 @@
 {
-    depfiles_gcc = "main.o: src/main.cpp\
-",
     values = {
         "/usr/bin/gcc",
         {
@@ -11,6 +9,8 @@
         }
     },
     files = {
-        "src/main.cpp"
-    }
+        "01_code/01_code.cpp"
+    },
+    depfiles_gcc = "01_code.o: 01_code/01_code.cpp\
+"
 }

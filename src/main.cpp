@@ -5,26 +5,19 @@
 #include <iostream>
 #include <functional>
 #include <cassert>
+#include <vector>
+#include <map>
+#include <string>
+
+template<class T, class U>
+auto Add(T &&t, U &&u) -> decltype(std::forward<T>(t) + std::forward<T>(u)) {
+    return std::forward<T>(t) + std::forward<T>(u);
+}
 
 int main() {
-
-    {
-        // C++20 才支持 std::make_shared<int[]>
-        // std::shared_ptr<int[]> sptr = std::make_shared<int[]>(100);
-        std::shared_ptr<int[]> sptr(new int[10]);
-        for (int i = 0; i < 10; i++) {
-            sptr[i] = i * i;
-        }
-        for (int i = 0; i < 10; i++) {
-            std::cout << sptr[i] << std::endl;
-        }
-    }
-
-    {
-        std::shared_ptr<FILE,std::function<void(FILE*)>> sptr(fopen("test_file.txt", "w"), [](FILE *fp) {
-            std::cout << "close " << fp << std::endl;
-            fclose(fp);
-        });
-    }
+    auto func = [](int a, double b) -> decltype(a + b) { return a + b; };
+    std::cout << Add(2, 5);
+    while (1)
+        ;
     return 0;
 }
