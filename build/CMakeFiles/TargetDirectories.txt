@@ -1,3 +1,0 @@
-/home/lxr/workspace/Algorithm/build/CMakeFiles/test.dir
-/home/lxr/workspace/Algorithm/build/CMakeFiles/edit_cache.dir
-/home/lxr/workspace/Algorithm/build/CMakeFiles/rebuild_cache.dir

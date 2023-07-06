@@ -1,22 +1,22 @@
 {
     fmt = {
-        __enabled = true,
-        version = "10.0.0",
-        linkdirs = "/home/lxr/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/lib",
-        libfiles = "/home/lxr/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/lib/libfmt.a",
-        static = true,
         envs = {
             PATH = {
-                "/home/lxr/.xmake/packages/c/cmake/3.26.4/70ca2de0269e418ea31bc5c390d4443f/bin"
+                "/home/yaojie/.xmake/packages/c/cmake/3.26.4/70ca2de0269e418ea31bc5c390d4443f/bin"
             },
             LD_LIBRARY_PATH = {
-                "/home/lxr/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/lib",
-                "/home/lxr/.xmake/packages/c/cmake/3.26.4/70ca2de0269e418ea31bc5c390d4443f/lib"
+                "/home/yaojie/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/lib",
+                "/home/yaojie/.xmake/packages/c/cmake/3.26.4/70ca2de0269e418ea31bc5c390d4443f/lib"
             }
         },
-        sysincludedirs = "/home/lxr/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/include",
-        installdir = "/home/lxr/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660",
+        sysincludedirs = "/home/yaojie/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/include",
+        version = "10.0.0",
         links = "fmt",
-        __requirestr = "fmt"
+        installdir = "/home/yaojie/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660",
+        __requirestr = "fmt",
+        linkdirs = "/home/yaojie/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/lib",
+        libfiles = "/home/yaojie/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/lib/libfmt.a",
+        static = true,
+        __enabled = true
     }
 }

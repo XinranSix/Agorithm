@@ -1,7 +1,0 @@
-{
-    errdata = "\27[1msrc/main.cpp:4:26: \27[0m\27[0;1;35mwarning: \27[0m\27[1msigned shift result (0x100000000) requires 34 bits to represent, but 'int' only has 32 bits [-Wshift-overflow]\27[0m\
-    long long x1 = 65536 << 16;\
-\27[0;1;32m                   ~~~~~ ^  ~~\
-\27[0m1 warning generated.\
-"
-}

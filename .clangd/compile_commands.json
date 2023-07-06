@@ -1,6 +1,6 @@
 [
 {
-  "directory": "/home/lxr/workspace/Algorithm",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-I", "/home/lxr/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/include", "-o", "build/.objs/main/linux/x86_64/release/src/main.cpp.o", "src/main.cpp"],
+  "directory": "/home/yaojie/workspace/code/Agorithm",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-I", "/home/yaojie/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/include", "-o", "build/.objs/main/linux/x86_64/release/src/main.cpp.o", "src/main.cpp"],
   "file": "src/main.cpp"
 }]

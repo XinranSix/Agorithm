@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/lxr/workspace/Algorithm/build",
-  "command": "/usr/bin/g++-11 -g -m64 -o CMakeFiles/test.dir/subdirs/main.cpp.o -c /home/lxr/workspace/Algorithm/subdirs/main.cpp",
-  "file": "/home/lxr/workspace/Algorithm/subdirs/main.cpp"
-}
-]

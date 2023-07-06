@@ -1,4 +1,5 @@
 add_requires("fmt")
+set_languages("cxx20")
 
 target("main")
     set_kind("binary")
