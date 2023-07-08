@@ -1,0 +1,21 @@
+[
+{
+  "directory": "/home/yaojie/workspace/code/Agorithm",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-o", "build/.objs/03_code/linux/x86_64/debug/01_code/03_code.c.o", "01_code/03_code.c"],
+  "file": "01_code/03_code.c"
+},
+{
+  "directory": "/home/yaojie/workspace/code/Agorithm",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-o", "build/.objs/02_code/linux/x86_64/debug/01_code/02_code.c.o", "01_code/02_code.c"],
+  "file": "01_code/02_code.c"
+},
+{
+  "directory": "/home/yaojie/workspace/code/Agorithm",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-std=c++20", "-I", "/home/yaojie/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/include", "-o", "build/.objs/main/linux/x86_64/debug/src/main.cpp.o", "src/main.cpp"],
+  "file": "src/main.cpp"
+},
+{
+  "directory": "/home/yaojie/workspace/code/Agorithm",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-o", "build/.objs/01_code/linux/x86_64/debug/01_code/01_code.c.o", "01_code/01_code.c"],
+  "file": "01_code/01_code.c"
+}]

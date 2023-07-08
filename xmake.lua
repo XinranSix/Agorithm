@@ -3,6 +3,9 @@ set_languages("cxx20")
 add_rules("mode.debug", "mode.release")
 
 includes("01_code")
+includes("tree")
+includes("string")
+includes("sort");
 
 target("main")
     set_kind("binary")
