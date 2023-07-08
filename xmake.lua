@@ -7,6 +7,8 @@ includes("tree")
 includes("string")
 includes("sort");
 
+add_includedirs("include")
+
 target("main")
     set_kind("binary")
     add_files("./src/*.cpp")
