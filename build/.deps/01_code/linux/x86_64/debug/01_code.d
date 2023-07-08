@@ -1,6 +1,6 @@
 {
     values = {
-        "/usr/bin/g++",
+        "/usr/bin/clang++",
         {
             "-m64"
         }
