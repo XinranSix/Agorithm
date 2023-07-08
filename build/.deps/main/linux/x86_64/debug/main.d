@@ -3,10 +3,10 @@
         "build/.objs/main/linux/x86_64/debug/src/main.cpp.o"
     },
     values = {
-        "/usr/bin/clang++",
+        "/usr/bin/g++",
         {
             "-m64",
-            "-L/home/yaojie/.xmake/packages/f/fmt/10.0.0/00a8cc0091944cda9c00dd6f9e3103e0/lib",
+            "-L/home/yaojie/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/lib",
             "-lfmt"
         }
     }
