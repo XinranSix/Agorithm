@@ -1,10 +1,33 @@
 #include <iostream>
-#include <fmt/core.h>
-#include "add.h"
+#include <string>
+using namespace std;
+
+
 
 int main() {
-    for (int i = 0; i < 100; ++i) {
-        add(i, i + 1);
+    int s[100010] = {0};
+    int n;
+    cin >> n;
+    int idx = 0;
+    while (n--) {
+        string op;
+        cin >> op;
+        if (op == "push") {
+            int x;
+            cin >> x;
+            s[idx++] = x;
+        } else if (op == "pop") {
+            if (idx == 0) {
+                cout << "error" << endl;
+            } else {
+                cout << s[idx--] << endl;
+            }
+        } else if (op == "top") {
+            if (idx == 0) {
+                cout << "error" << endl;
+            } else {
+                cout << s[idx] << endl;
+            }
+        }
     }
-    return 0;
 }

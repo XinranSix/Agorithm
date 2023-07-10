@@ -2,7 +2,7 @@ add_requires("fmt")
 set_languages("cxx20")
 add_rules("mode.debug", "mode.release")
 
-includes("01_code")
+includes("test")
 includes("tree")
 includes("string")
 includes("sort");

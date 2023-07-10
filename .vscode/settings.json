@@ -1,5 +1,9 @@
 {
     "clangd.fallbackFlags": [
         "-I${workspaceFolder}/include"
-    ]
+    ],
+    "files.associations": {
+        "map": "cpp",
+        "bitset": "cpp"
+    }
 }
