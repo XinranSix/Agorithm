@@ -7,7 +7,12 @@ using namespace std;
 
 int main() {
 
-    cout << bitset<32>(8 - 12) << endl;
+    typedef int MYARR[5];
+    MYARR arr = {2, 3, 1, 12, 6};
+
+    for (int i = 0; i < 5; ++i) {
+        cout << arr[i] << ' ';
+    }
 
     return 0;
 }
