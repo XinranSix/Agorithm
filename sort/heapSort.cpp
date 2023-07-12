@@ -1,42 +1,70 @@
-#include <iostream>
-#include <algorithm>
+                                      #include <iostream>
 
 using namespace std;
 
-void max_heapify(int arr[], int start, int end) {
-    //建立父节点指标和子节点指标
-    int dad = start;
-    int son = dad * 2 + 1;
-    while (son <= end) { //若子节点指标在范围内才做比较
-        if (son + 1 <= end &&
-            arr[son] < arr[son + 1]) //先比较两个子节点大小，选择最大的
-            son++;
-        if (arr[dad] >
-            arr[son]) //如果父节点大于子节点代表调整完毕，直接跳出函数
-            return;
-        else { //否则交换父子内容再继续子节点和孙节点比较
-            swap(arr[dad], arr[son]);
-            dad = son;
-            son = dad * 2 + 1;
+void down(int *arr, int n, int cur) {
+    // 左子树
+    int child = 2 * cur + 1;
+    while (child < n) {
+        // 比较左右子树，找到较小值
+        if (child + 1 < n && arr[child + 1] < arr[child]) {
+            ++child;
+            // child时刻保存较小值的下标
+        }
+        if (arr[child] < arr[cur]) {
+
+            int tmp = arr[child];
+            arr[child] = arr[cur];
+            arr[cur] = tmp;
+
+            cur = child;
+            child = 2 * cur + 1;
+        } else {
+            break;
         }
     }
 }
 
-void heap_sort(int arr[], int len) {
-    //初始化，i从最后一个父节点开始调整
-    for (int i = len / 2 - 1; i >= 0; i--)
-        max_heapify(arr, i, len - 1);
-    //先将第一个元素和已经排好的元素前一位做交换，再从新调整(刚调整的元素之前的元素)，直到排序完毕
-    for (int i = len - 1; i > 0; i--) {
-        swap(arr[0], arr[i]);
-        max_heapify(arr, 0, i - 1);
+void up(int *arr, int n, int cur) {
+    int parent = (cur - 1) / 2;
+    while (cur > 0) {
+        if (arr[cur] < arr[parent]) {
+
+            int tmp = arr[cur];
+            arr[cur] = arr[parent];
+            arr[parent] = tmp;
+
+            cur = parent;
+            parent = (cur - 1) / 2;
+        } else {
+            break;
+        }
     }
 }
 
+void heapify(int arr[], int n) {
+    for (int i = n / 2; i >= 0; --i) {
+        down(arr, n, i);
+    }
+}
+
+void heap_sort(int arr[], int n) {
+    int end = n - 1;
+    while (end > 0) {
+        
+        int tmp = arr[0];
+        arr[0] = arr[end];
+        arr[end] = tmp;
+
+        down(arr, end, 0);
+        end--;
+    }
+}
 int main() {
     int arr[] = {3, 5, 3, 0, 8, 6, 1, 5, 8, 6, 2, 4, 9, 4, 7,
                  0, 1, 8, 9, 7, 3, 1, 2, 5, 9, 7, 4, 0, 2, 6};
     int len = (int)sizeof(arr) / sizeof(*arr);
+    heapify(arr, len);
     heap_sort(arr, len);
     for (int i = 0; i < len; i++)
         cout << arr[i] << ' ';

@@ -14,20 +14,48 @@
 
 using namespace std;
 
-void test08() {}
+void test09() {}
 
+// 方法一：
+void test08() {
+    int min1 = 0x7fffffff;
+    int min2 = 0x7fffffff;
+    int n = 5;
+    while (n--) {
+        int x;
+        cin >> x;
+        if (x <= min1) {
+            min2 = min1;
+            min1 = x;
+        } else if (x > min1 && x <= min2) {
+            min2 = x;
+        }
+    }
+    cout << min1 << ' ' << min2;
+}
+
+void min2(int *a, int *b) {
+    if (*a > *b) {
+        *a = *a ^ *b;
+        *b = *a ^ *b;
+        *a = *a ^ *b;
+    }
+}
+
+// 方法二：
 void test07() {
-    char data = 0xff;
-    cout << bitset<8>(data) << endl;
-    cout << bitset<8>(data & ~(1 << 3 | 1 << 4)) << endl;
-    data = 0x00;
-    cout << bitset<8>(data) << endl;
-    cout << bitset<8>(data | (1 << 5 | 1 << 6)) << endl;
-    data = 0x0f;
-    cout << bitset<8>(data) << endl;
-    data &= ~(1 << 3 | 1 << 4);
-    data |= (1 << 5 | 1 << 6);
-    cout << bitset<8>(data) << endl;
+    int a, b, c, d, e;
+    cin >> a >> b >> c >> d >> e;
+    min2(&a, &b);
+    min2(&a, &c);
+    min2(&a, &d);
+    min2(&a, &e);
+
+    min2(&b, &c);
+    min2(&b, &d);
+    min2(&b, &e);
+
+    cout << a << ' ' << b;
 }
 
 void test06() {
@@ -94,6 +122,8 @@ map<int, function<int(int, int)>> fun() {
 }
 
 int main(int argc, char *argv[]) {
-    cout << fun()['+'](1, 2);
+    test08();
+    // std::cout << hex << INT32_MAX << endl;
     return 0;
 }
+
