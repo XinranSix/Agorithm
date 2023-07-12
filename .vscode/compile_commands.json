@@ -1,31 +1,36 @@
 [
 {
   "directory": "/home/yaojie/workspace/code/Agorithm",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-Iinclude", "-o", "build/.objs/04_code/linux/x86_64/debug/test/04_code.c.o", "test/04_code.c"],
-  "file": "test/04_code.c"
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-Iinclude", "-o", "build/.objs/04_code/linux/x86_64/debug/c_test/04_code.c.o", "c_test/04_code.c"],
+  "file": "c_test/04_code.c"
 },
 {
   "directory": "/home/yaojie/workspace/code/Agorithm",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-std=c++20", "-Iinclude", "-I", "/home/yaojie/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/include", "-o", "build/.objs/main/linux/x86_64/debug/src/add.cpp.o", "src/add.cpp"],
-  "file": "src/add.cpp"
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-Iinclude", "-o", "build/.objs/03_code/linux/x86_64/debug/c_test/03_code.c.o", "c_test/03_code.c"],
+  "file": "c_test/03_code.c"
 },
 {
   "directory": "/home/yaojie/workspace/code/Agorithm",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-std=c++20", "-Iinclude", "-I", "/home/yaojie/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/include", "-o", "build/.objs/main/linux/x86_64/debug/src/main.cpp.o", "src/main.cpp"],
-  "file": "src/main.cpp"
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-Iinclude", "-o", "build/.objs/02_code/linux/x86_64/debug/c_test/02_code.c.o", "c_test/02_code.c"],
+  "file": "c_test/02_code.c"
 },
 {
   "directory": "/home/yaojie/workspace/code/Agorithm",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-Iinclude", "-o", "build/.objs/02_code/linux/x86_64/debug/test/02_code.c.o", "test/02_code.c"],
-  "file": "test/02_code.c"
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-Iinclude", "-o", "build/.objs/01_code/linux/x86_64/debug/c_test/01_code.c.o", "c_test/01_code.c"],
+  "file": "c_test/01_code.c"
 },
 {
   "directory": "/home/yaojie/workspace/code/Agorithm",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-Iinclude", "-o", "build/.objs/03_code/linux/x86_64/debug/test/03_code.c.o", "test/03_code.c"],
-  "file": "test/03_code.c"
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-std=c++20", "-Iinclude", "-I", "/home/yaojie/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/include", "-I", "/home/yaojie/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/include", "-o", "build/.objs/bubbleSort/linux/x86_64/debug/sort/bubbleSort.cpp.o", "sort/bubbleSort.cpp"],
+  "file": "sort/bubbleSort.cpp"
 },
 {
   "directory": "/home/yaojie/workspace/code/Agorithm",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-Iinclude", "-o", "build/.objs/01_code/linux/x86_64/debug/test/01_code.c.o", "test/01_code.c"],
-  "file": "test/01_code.c"
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-std=c++20", "-Iinclude", "-I", "/home/yaojie/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/include", "-I", "/home/yaojie/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/include", "-o", "build/.objs/main/linux/x86_64/debug/test/main.cpp.o", "test/main.cpp"],
+  "file": "test/main.cpp"
+},
+{
+  "directory": "/home/yaojie/workspace/code/Agorithm",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-std=c++20", "-Iinclude", "-I", "/home/yaojie/.xmake/packages/f/fmt/10.0.0/cf4a2efd8ed34f738dfde8eaa4fb9660/include", "-I", "/home/yaojie/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/include", "-o", "build/.objs/select_sort/linux/x86_64/debug/sort/select_sort.cpp.o", "sort/select_sort.cpp"],
+  "file": "sort/select_sort.cpp"
 }]
