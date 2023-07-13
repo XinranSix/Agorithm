@@ -1,17 +1,20 @@
-#include <stdio.h>
-#include <assert.h>
-#include <time.h>
+// #include <stdio.h>
 
-int main(int argc, char *argv[]) {
+// int main() {
+//     int n;
+//     char ch;
+//     scanf("%d %c", &n, &ch);
 
-    do {
-    } while (1);
+//     for (int i = 0; i < n; ++i) {
+//         for (int j = 0; j < n; ++j) {
+//             if (i + j < n - 1) {
+//                 printf(" ");
+//             } else {
+//                 printf("%c", ch);
+//             }
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
 
-    // void (*sfp)(int);
-
-loop:
-    int tmp = 10;
-    
-
-        return 0;
-}

@@ -3,6 +3,8 @@
         "-I${workspaceFolder}/include"
     ],
     "files.associations": {
+        "*.excalidraw": "json",
+        "*.excalidrawlib": "json",
         "map": "cpp",
         "bitset": "cpp",
         "array": "cpp",
@@ -48,6 +50,7 @@
         "ostream": "cpp",
         "stdexcept": "cpp",
         "streambuf": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "assert.h": "c"
     }
 }
