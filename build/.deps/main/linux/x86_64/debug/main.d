@@ -1,7 +1,4 @@
 {
-    files = {
-        "build/.objs/main/linux/x86_64/debug/test/main.cpp.o"
-    },
     values = {
         "/usr/bin/g++",
         {
@@ -14,5 +11,8 @@
             "-lgmock",
             "-lpthread"
         }
+    },
+    files = {
+        "build/.objs/main/linux/x86_64/debug/test/main.cpp.o"
     }
 }

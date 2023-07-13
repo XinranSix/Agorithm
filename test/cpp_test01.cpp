@@ -1,16 +1,16 @@
+#include <bitset>
+#include <cmath>
 #include <cstdint>
 #include <cstdlib>
+#include <functional>
 #include <gtest/gtest.h>
+#include <iostream>
+#include <map>
 #include <numeric>
 #include <stdint.h>
-#include <vector>
-#include <iostream>
 #include <stdlib.h>
 #include <time.h>
-#include <cmath>
-#include <bitset>
-#include <map>
-#include <functional>
+#include <vector>
 
 using namespace std;
 
@@ -18,10 +18,13 @@ void test09() {}
 
 // 方法一：
 void test08() {
+
     int min1 = 0x7fffffff;
     int min2 = 0x7fffffff;
+
     int n = 5;
-    while (n--) {
+    
+    for (int i = 0; i < n; ++i) {
         int x;
         cin >> x;
         if (x <= min1) {
@@ -31,6 +34,7 @@ void test08() {
             min2 = x;
         }
     }
+
     cout << min1 << ' ' << min2;
 }
 
@@ -126,4 +130,3 @@ int main(int argc, char *argv[]) {
     // std::cout << hex << INT32_MAX << endl;
     return 0;
 }
-
