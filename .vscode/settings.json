@@ -51,6 +51,7 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "typeinfo": "cpp",
-        "assert.h": "c"
+        "assert.h": "c",
+        "stdio.h": "c"
     }
 }
